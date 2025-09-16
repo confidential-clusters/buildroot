@@ -12,13 +12,13 @@ on:
     branches:
       - "main"
     paths:
-      - '.github/Containerfile.buildroot'
+      - 'Containerfile'
       - '.github/workflows/buildroot.yml'
   push:
     branches:
       - "main"
     paths:
-      - '.github/Containerfile.buildroot'
+      - 'Containerfile'
       - '.github/workflows/buildroot.yml'
   schedule:
     - cron:  '0 0 * * MON'
@@ -50,7 +50,7 @@ jobs:
           context: .github
           image: ${{ env.NAME }}
           tags: latest-x86_64
-          containerfiles: .github/Containerfile.buildroot
+          containerfiles: Containerfile
           oci: true
 
       - name: Push to Container Registry
@@ -76,7 +76,7 @@ jobs:
           context: .github
           image: ${{ env.NAME }}
           tags: latest-aarch64
-          containerfiles: .github/Containerfile.buildroot
+          containerfiles: Containerfile
           oci: true
 
       - name: Push to Container Registry

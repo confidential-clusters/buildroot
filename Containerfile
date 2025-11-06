@@ -8,9 +8,11 @@ RUN dnf install -y \
         gcc \
         gcc-c++ \
         git \
+        golang \
         jq \
         just \
         openssl-devel \
         podman \
+        rustfmt \
     && \
     dnf clean all

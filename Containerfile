@@ -14,5 +14,7 @@ RUN dnf install -y \
         openssl-devel \
         podman \
         rustfmt \
+        perl-FindBin \
+        perl-core \
     && \
     dnf clean all

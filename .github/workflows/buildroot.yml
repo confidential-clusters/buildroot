@@ -52,11 +52,11 @@ jobs:
             arch: aarch64
             runner: ubuntu-24.04-arm
           - tag: centos-stream
-            base: quay.io/centos/centos:stream9
+            base: quay.io/centos/centos:stream10
             arch: x86_64
             runner: ubuntu-24.04
           - tag: centos-stream
-            base: quay.io/centos/centos:stream9
+            base: quay.io/centos/centos:stream10
             arch: aarch64
             runner: ubuntu-24.04-arm
     steps:

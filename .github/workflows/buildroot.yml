@@ -59,6 +59,14 @@ jobs:
             base: quay.io/centos/centos:stream9
             arch: aarch64
             runner: ubuntu-24.04-arm
+          - tag: ubi9
+            base: registry.access.redhat.com/ubi9
+            arch: x86_64
+            runner: ubuntu-24.04
+          - tag: ubi9
+            base: registry.access.redhat.com/ubi9
+            arch: aarch64
+            runner: ubuntu-24.04-arm
     steps:
       - name: Checkout repo
         uses: actions/checkout@v5
